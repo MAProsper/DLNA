@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" soap:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <soap:Body>
+        <soap:Fault>
+            <soap:faultcode>s:Client</soap:faultcode>
+            <soap:faultstring>UPnPError</soap:faultstring>
+            <soap:detail>
+                <ctrl:UPnPError xmlns:ctrl="urn:schemas-upnp-org:control-1-0">
+                    <ctrl:errorCode />
+                    <ctrl:errorDescription />
+                </ctrl:UPnPError>
+            </soap:detail>
+        </soap:Fault>
+    </soap:Body>
+</soap:Envelope>

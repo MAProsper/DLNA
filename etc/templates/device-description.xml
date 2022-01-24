@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev:root xmlns:dev="urn:schemas-upnp-org:device-1-0">
+    <dev:specVersion>
+        <dev:major>1</dev:major>
+        <dev:minor>0</dev:minor>
+    </dev:specVersion>
+    <dev:device>
+        <dev:deviceType>urn:schemas-upnp-org:device:MediaServer:1</dev:deviceType>
+        <dev:friendlyName />
+        <dev:UDN />
+        <dev:serviceList>
+            <dev:service>
+                <dev:serviceType>urn:schemas-upnp-org:service:ConnectionManager:1</dev:serviceType>
+                <dev:serviceId>urn:upnp-org:serviceId:ConnectionManager</dev:serviceId>
+                <dev:SCPDURL>/connection-manager.xml</dev:SCPDURL>
+                <dev:eventSubURL>/connection-manager.xml</dev:eventSubURL>
+            </dev:service>
+            <dev:service>
+                <dev:serviceType>urn:schemas-upnp-org:service:ContentDirectory:1</dev:serviceType>
+                <dev:serviceId>urn:upnp-org:serviceId:ContentDirectory</dev:serviceId>
+                <dev:SCPDURL>/content-directory.xml</dev:SCPDURL>
+                <dev:controlURL>/content-directory.xml</dev:controlURL>
+                <dev:eventSubURL>/content-directory.xml</dev:eventSubURL>
+            </dev:service>
+            <dev:service>
+                <dev:serviceType>urn:microsoft.com:service:X_MS_MediaReceiverRegistrar:1</dev:serviceType>
+                <dev:serviceId>urn:microsoft.com:serviceId:X_MS_MediaReceiverRegistrar</dev:serviceId>
+                <dev:SCPDURL>/media-receiver-registrar.xml</dev:SCPDURL>
+                <dev:controlURL>/media-receiver-registrar.xml</dev:controlURL>
+                <dev:eventSubURL>/media-receiver-registrar.xml</dev:eventSubURL>
+            </dev:service>
+        </dev:serviceList>
+    </dev:device>
+</dev:root>

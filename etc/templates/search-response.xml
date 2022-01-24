@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" soap:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <soap:Body>
+        <cd:SearchResponse xmlns:cd="urn:schemas-upnp-org:service:ContentDirectory:1">
+            <Result />
+            <TotalMatches />
+            <NumberReturned />
+            <UpdateID />
+        </cd:SearchResponse>
+    </soap:Body>
+</soap:Envelope>

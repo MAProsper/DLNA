@@ -1,0 +1,12 @@
+# Linter
+flake8
+flake8-docstrings
+mccabe
+pep8-naming
+pydocstyle
+
+# Formatter
+autopep8
+
+# Utilities
+pipdeptree

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<srv:scpd xmlns:srv="urn:schemas-upnp-org:service-1-0">
+	<srv:specVersion>
+		<srv:major>1</srv:major>
+		<srv:minor>0</srv:minor>
+	</srv:specVersion>
+	<srv:actionList>
+		<srv:action>
+			<srv:name>Browse</srv:name>
+			<srv:argumentList>
+				<srv:argument>
+					<srv:name>ObjectID</srv:name>
+					<srv:direction>in</srv:direction>
+					<srv:relatedStateVariable>A_ARG_TYPE_ObjectID</srv:relatedStateVariable>
+				</srv:argument>
+				<srv:argument>
+					<srv:name>BrowseFlag</srv:name>
+					<srv:direction>in</srv:direction>
+					<srv:relatedStateVariable>A_ARG_TYPE_BrowseFlag</srv:relatedStateVariable>
+				</srv:argument>
+				<srv:argument>
+					<srv:name>Filter</srv:name>
+					<srv:direction>in</srv:direction>
+					<srv:relatedStateVariable>A_ARG_TYPE_Filter</srv:relatedStateVariable>
+				</srv:argument>
+				<srv:argument>
+					<srv:name>StartingIndex</srv:name>
+					<srv:direction>in</srv:direction>
+					<srv:relatedStateVariable>A_ARG_TYPE_Index</srv:relatedStateVariable>
+				</srv:argument>
+				<srv:argument>
+					<srv:name>RequestedCount</srv:name>
+					<srv:direction>in</srv:direction>
+					<srv:relatedStateVariable>A_ARG_TYPE_Count</srv:relatedStateVariable>
+				</srv:argument>
+				<srv:argument>
+					<srv:name>SortCriteria</srv:name>
+					<srv:direction>in</srv:direction>
+					<srv:relatedStateVariable>A_ARG_TYPE_SortCriteria</srv:relatedStateVariable>
+				</srv:argument>
+				<srv:argument>
+					<srv:name>Result</srv:name>
+					<srv:direction>out</srv:direction>
+					<srv:relatedStateVariable>A_ARG_TYPE_Result</srv:relatedStateVariable>
+				</srv:argument>
+				<srv:argument>
+					<srv:name>NumberReturned</srv:name>
+					<srv:direction>out</srv:direction>
+					<srv:relatedStateVariable>A_ARG_TYPE_Count</srv:relatedStateVariable>
+				</srv:argument>
+				<srv:argument>
+					<srv:name>TotalMatches</srv:name>
+					<srv:direction>out</srv:direction>
+					<srv:relatedStateVariable>A_ARG_TYPE_Count</srv:relatedStateVariable>
+				</srv:argument>
+				<srv:argument>
+					<srv:name>UpdateID</srv:name>
+					<srv:direction>out</srv:direction>
+					<srv:relatedStateVariable>A_ARG_TYPE_UpdateID</srv:relatedStateVariable>
+				</srv:argument>
+			</srv:argumentList>
+		</srv:action>
+	</srv:actionList>
+	<srv:serviceStateTable>
+		<srv:stateVariable srv:sendEvents="no">
+			<srv:name>A_ARG_TYPE_ObjectID</srv:name>
+			<srv:dataType>string</srv:dataType>
+		</srv:stateVariable>
+		<srv:stateVariable srv:sendEvents="no">
+			<srv:name>A_ARG_TYPE_Result</srv:name>
+			<srv:dataType>string</srv:dataType>
+		</srv:stateVariable>
+		<srv:stateVariable srv:sendEvents="no">
+			<srv:name>A_ARG_TYPE_SearchCriteria</srv:name>
+			<srv:dataType>string</srv:dataType>
+		</srv:stateVariable>
+		<srv:stateVariable srv:sendEvents="no">
+			<srv:name>A_ARG_TYPE_BrowseFlag</srv:name>
+			<srv:dataType>string</srv:dataType>
+			<srv:allowedValueList>
+				<srv:allowedValue>BrowseDirectChildren</srv:allowedValue>
+			</srv:allowedValueList>
+		</srv:stateVariable>
+		<srv:stateVariable srv:sendEvents="no">
+			<srv:name>A_ARG_TYPE_Filter</srv:name>
+			<srv:dataType>string</srv:dataType>
+		</srv:stateVariable>
+		<srv:stateVariable srv:sendEvents="no">
+			<srv:name>A_ARG_TYPE_SortCriteria</srv:name>
+			<srv:dataType>string</srv:dataType>
+		</srv:stateVariable>
+		<srv:stateVariable srv:sendEvents="no">
+			<srv:name>A_ARG_TYPE_Index</srv:name>
+			<srv:dataType>ui4</srv:dataType>
+		</srv:stateVariable>
+		<srv:stateVariable srv:sendEvents="no">
+			<srv:name>A_ARG_TYPE_Count</srv:name>
+			<srv:dataType>ui4</srv:dataType>
+		</srv:stateVariable>
+		<srv:stateVariable srv:sendEvents="no">
+			<srv:name>A_ARG_TYPE_UpdateID</srv:name>
+			<srv:dataType>ui4</srv:dataType>
+		</srv:stateVariable>
+	</srv:serviceStateTable>
+</srv:scpd>

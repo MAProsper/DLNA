@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<srv:scpd xmlns:srv="urn:schemas-upnp-org:service-1-0">
+	<srv:specVersion>
+		<srv:major>1</srv:major>
+		<srv:minor>0</srv:minor>
+	</srv:specVersion>
+	<srv:actionList>
+		<srv:action>
+			<srv:name>GetProtocolInfo</srv:name>
+			<srv:argumentList>
+				<srv:argument>
+					<srv:name>Source</srv:name>
+					<srv:direction>out</srv:direction>
+					<srv:relatedStateVariable>SourceProtocolInfo</srv:relatedStateVariable>
+				</srv:argument>
+				<srv:argument>
+					<srv:name>Sink</srv:name>
+					<srv:direction>out</srv:direction>
+					<srv:relatedStateVariable>SinkProtocolInfo</srv:relatedStateVariable>
+				</srv:argument>
+			</srv:argumentList>
+		</srv:action>
+	</srv:actionList>
+	<srv:serviceStateTable>
+		<srv:stateVariable srv:sendEvents="no">
+			<srv:name>SourceProtocolInfo</srv:name>
+			<srv:dataType>string</srv:dataType>
+		</srv:stateVariable>
+		<srv:stateVariable srv:sendEvents="no">
+			<srv:name>SinkProtocolInfo</srv:name>
+			<srv:dataType>string</srv:dataType>
+		</srv:stateVariable>
+		<srv:stateVariable srv:sendEvents="no">
+			<srv:name>CurrentConnectionIDs</srv:name>
+			<srv:dataType>string</srv:dataType>
+		</srv:stateVariable>
+	</srv:serviceStateTable>
+</srv:scpd>
